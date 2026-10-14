@@ -1,0 +1,59 @@
+fScript started on 2026-10-14 14:40:00+05:00 [TERM="dumb" COLUMNS="80" LINES="24"]
+me@ubuntu:~$ pwd
+/home/me
+me@ubuntu:~$ cd /etc
+me@ubuntu:/etc$ cd ..
+me@ubuntu:/$ cd /
+me@ubuntu:/$ ls
+bin   dev  home  lib64       media  opt   root  sbin  sys  usr
+boot  etc  lib   lost+found  mnt    proc  run   srv   tmp  var
+me@ubuntu:/$ ls -l
+total 64
+lrwxrwxrwx   1 root root     7 Apr 23  2024 bin -> usr/bin
+drwxr-xr-x   4 root root  4096 Oct 10 10:15 boot
+drwxr-xr-x  14 root root  4040 Oct 14 09:00 dev
+drwxr-xr-x 135 root root 12288 Oct 14 09:15 etc
+drwxr-xr-x   3 root root  4096 Oct  1 12:00 home
+lrwxrwxrwx   1 root root     7 Apr 23  2024 lib -> usr/lib
+lrwxrwxrwx   1 root root     9 Apr 23  2024 lib64 -> usr/lib64
+drwx------   2 root root 16384 Apr 23  2024 lost+found
+drwxr-xr-x   2 root root  4096 Apr 23  2024 media
+drwxr-xr-x   2 root root  4096 Apr 23  2024 mnt
+drwxr-xr-x   2 root root  4096 Apr 23  2024 opt
+dr-xr-xr-x 210 root root     0 Oct 14 09:00 proc
+drwx------   4 root root  4096 Oct 12 11:20 root
+drwxr-xr-x  28 root root   900 Oct 14 09:00 run
+lrwxrwxrwx   1 root root     8 Apr 23  2024 sbin -> usr/sbin
+drwxr-xr-x   2 root root  4096 Apr 23  2024 srv
+dr-xr-xr-x  13 root root     0 Oct 14 09:00 sys
+drwxrwxrwt  11 root root  4096 Oct 14 14:30 tmp
+drwxr-xr-x  11 root root  4096 Apr 23  2024 usr
+drwxr-xr-x  14 root root  4096 Apr 23  2024 var
+me@ubuntu:/$ ls /etc
+adduser.conf            hosts           passwd
+alternatives            init.d          profile
+bash.bashrc             issue           resolv.conf
+crontab                 network         shadow
+fstab                   opt             timezone
+me@ubuntu:/$ ls /bin /sbin
+/bin:
+bash  cat  chmod  cp  date  grep  kill  ls  mkdir  mv  pwd  rm  touch
+
+/sbin:
+fdisk  fsck  halt  ifconfig  init  ip  reboot  route  shutdown
+me@ubuntu:/$ ls ~
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+me@ubuntu:/$ ls -a ~
+.              .bashrc    Documents  Music     Templates
+..             .cache     Downloads  Pictures  Videos
+.bash_history  .profile   Desktop    Public
+me@ubuntu:/$ ls -lh /boot
+total 145M
+-rw-r--r-- 1 root root 272K Oct  2 14:20 config-6.8.0-45-generic
+drwxr-xr-x 5 root root 4.0K Oct 10 10:15 grub
+-rw-r--r-- 1 root root 131M Oct 10 10:14 initrd.img-6.8.0-45-generic
+-rw------- 1 root root 8.4M Oct  2 14:20 System.map-6.8.0-45-generic
+-rw------- 1 root root  14M Oct  2 14:21 vmlinuz-6.8.0-45-generic
+me@ubuntu:/$ exit
+
+Script done on 2026-10-14 14:48:30+05:00 [COMMAND_EXIT_CODE="0"]
